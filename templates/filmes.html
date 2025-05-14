@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <table>
+        <tr><th>Titulo</th> <th>Genero</th> <th>Ações</th> </tr>
+        {% for filme in filmes %}
+        <tr>
+            <td>{{ filme['titulo'] }}</td>
+            <td>{{ filme['genero'] }}</td>
+            <td>{{ filme['nota'] }}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+
+{% endblock %}
