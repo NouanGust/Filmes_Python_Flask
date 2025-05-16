@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <table>
+        <!--Linha principal-->
+        <tr>
+            <!--Coluna Titulo-->
+            <th>Titulo</th>
+            <!--Coluna Genero--> 
+            <th>Genero</th> 
+            <!--Coluna Notas-->
+            <th>Nota</th> 
+            <!--Coluna Ações-->
+            <th>Ações</th> 
+        </tr>
+
+        <!--Filmes do banco de dados-->
+        {% for filme in filmes %}
+
+        <tr>
+            <td>{{ filme['titulo'] }}</td>
+            <td>{{ filme['genero'] }}</td>
+            <td>{{ filme['nota'] }}</td>
+            <td>
+                <a href="/editar/{{ filme['id'] }}">Editar</a>
+                <a href="/deletar/{{ filme['id'] }}">Deletar</a>
+            </td>
+        </tr>
+
+
+        {% endfor %}
+
+
+    </table>
+
+{% endblock %}
