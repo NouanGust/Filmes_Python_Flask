@@ -1,0 +1,19 @@
+main{
+    margin: 20px 0px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+form {
+    padding: 10px;
+
+    input {
+        margin: 10px 0;
+    }
+}
