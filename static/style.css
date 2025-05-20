@@ -11,9 +11,15 @@ main{
 }
 
 form {
-    padding: 10px;
+    width: 250px;
 
     input {
         margin: 10px 0;
     }
 }
+
+.form-container {
+    width: 300px;
+}
+
+

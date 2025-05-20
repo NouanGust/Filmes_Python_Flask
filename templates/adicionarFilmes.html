@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <h2>Adicionar Filme</h2>
-    <form method="post">
-        <!--Campo do Titulo-->
-        <label for="titulo">Titulo:</label><br>
-        <input type="text" name="titulo" required><br>
-
-        <!--Campo do Genero-->
-        <label for="genero">Genero:</label><br>
-        <input type="text" name="genero" required><br>
-
-        <!--Campo da Nota-->
-        <label for="nota">Nota:</label><br>
-        <input type="number" name="nota" required><br>
+    <div class="form-container">
+        <h2>Adicionar Filme</h2>
+        <form method="post">
+            <!--Campo do Titulo-->
+            <label for="titulo" class="form-label">Titulo:</label><br>
+            <input type="text" name="titulo" class="form-control" required><br>
+            <!--Campo do Genero-->
+            <label for="genero" class="form-label">Genero:</label><br>
+            <input type="text" name="genero" class="form-control" required><br>
+            <!--Campo da Nota-->
+            <label for="nota" class="form-label">Nota:</label><br>
+            <input type="number" name="nota" class="form-control" required><br>
         
-        <button class="btn btn-success" type="submit">Salvar</button>
-    </form>
+            <button class="btn btn-success" type="submit">Salvar</button>
+        </form>
+    </div>
 
 {% endblock %}
